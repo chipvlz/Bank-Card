@@ -261,10 +261,11 @@
                         <p class="font-size-14 mb-0">Chi nhánh: <span class="text-dark font-weight-medium">Hoàng Cầu - Hà Nội</span></p>
                         <p class="font-size-14 mb-0">Số tài khoản: <span class="text-dark font-weight-medium">19032171498996</span></p>
                         <p class="font-size-14 mb-0">Chủ tài khoản: <span class="text-dark font-weight-medium">Nguyen Thao Hien</span></p>
-                        <p class="font-size-14 mb-0">Số tiền cần chuyển khoản: <span class="text-dark font-weight-medium">160.000 VNĐ</span></p>
-                        <p class="font-size-14">Nội dung chuyển khoản: <span class="text-dark font-weight-medium">0964953022</span></p>
+                        <p class="font-size-14 mb-0">Số tiền cần chuyển khoản: <span class="text-dark font-weight-medium">
+                                {{(int)Session::get('dataRequest')['money_charge']*(8/10)}}.000 VNĐ</span></p>
+                        <p class="font-size-14">Nội dung chuyển khoản: <span class="text-dark font-weight-medium">{{Session::get('dataRequest')['phone']}}</span></p>
                         <!-- End Card -->
-                        <a href="" class="btn btn-sm btn-block u-btn-primary--air u-btn-primary transition-3d-hover" tabindex="0">Tiếp tục nạp</a>
+                        <a href="/" class="btn btn-sm btn-block u-btn-primary--air u-btn-primary transition-3d-hover" tabindex="0">Tiếp tục nạp</a>
                     </div>
                 </div>
             </div>

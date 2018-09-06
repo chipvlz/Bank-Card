@@ -15,6 +15,11 @@ Route::get('/',[
     'as' => 'home.index',
     'uses' => 'HomeController@index'
 ]);
+Route::get('/thanh-cong',[
+    'as' => 'home.success',
+    'uses' => 'HomeController@success'
+]);
+
 Route::post('/add-card',[
     'as' => 'home.add',
     'uses' => 'HomeController@addCard'
