@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[
+    'as' => 'home.index',
+    'uses' => 'HomeController@index'
+]);
+Route::post('/add-card',[
+    'as' => 'home.add',
+    'uses' => 'HomeController@addCard'
+]);
+
