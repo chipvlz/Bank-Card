@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fceb5b1d-4f2c-4d78-8fd8-2b2bfd9bd033" name="Bank-card" url="http://45.76.184.36">
+        <fileTransfer host="45.76.184.36" port="22322" rootFolder="/home/cms/retail" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22322" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
